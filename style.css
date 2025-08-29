@@ -19,8 +19,9 @@ h3 {
 /* Header */
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;   /* center both h1 and nav as a group */
   align-items: center;
+  gap: 2rem;                 /* space between heading and nav */
   padding: 20px 0;
 }
 
@@ -28,8 +29,15 @@ header h1 {
   margin: 0;
 }
 
+nav {
+  display: flex;
+  gap: 1.5rem;               /* spacing between links */
+}
+
 nav a {
-  padding-left: 20px;
+  text-decoration: none;
+  color: #003049;
+  font-weight: bold;
 }
 
 /* Containers */
@@ -127,4 +135,5 @@ footer {
 hr {
   border: 1px solid black;
 }
+
 
